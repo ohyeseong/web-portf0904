@@ -1,0 +1,419 @@
+@charset "utf-8";
+
+#wrap {}
+
+
+/* header 영역 */
+#header {
+    width: 100%;
+    height: 148px;
+    border-bottom: 2px solid darkred;
+    position: relative;
+    /* sub_bg positioning */
+}
+
+.head_inner {
+    width: 940px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    /*logo positioning*/
+}
+
+.util {
+    float: left;
+    margin-top: 10px;
+}
+
+.util li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.util li a {}
+
+.util li a img {}
+
+.topmenu {
+    float: right;
+    margin-top: 10px;
+}
+
+.topmenu li {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.topmenu li a {
+    font-size: 12px;
+}
+
+.topmenu li a:hover {
+    font-size: 12px;
+    color: #666;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 30px;
+}
+
+.nav {
+    padding-top: 90px;
+}
+
+.main {}
+
+.main>li {
+    float: left;
+    width: calc(100% / 6);
+    text-align: center;
+    /* border: 1px solid black; */
+    position: relative;
+    /* sub positioning */
+}
+
+.main>li>a {
+    padding: 10px 0;
+    display: block;
+    transition: all 0.3s;
+}
+
+.main>li>a img {
+    display: inline-block;
+}
+
+.main>li>a span {
+    font-size: 10px;
+    display: block;
+    color: white;
+    transition: all 0.3s;
+}
+
+.main>li:hover>a {
+    background-color: red;
+}
+
+.main>li:hover>a img {
+    filter: invert(100%) brightness(200%);
+}
+
+.main>li:hover>a span {
+    display: block;
+}
+
+.sub {
+    position: absolute;
+    width: 100%;
+    top: 65px;
+    z-index: 6;
+    display: none;
+}
+
+.sub li {}
+
+.sub li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    color: #ddd;
+    font-size: 12px;
+
+}
+
+.sub li a:hover {
+    color: #aaa;
+}
+
+.sub_bg {
+    width: 100%;
+    height: 300px;
+    background-color: gray;
+    position: absolute;
+    left: 0;
+    top: 148px;
+    z-index: 5;
+    display: none;
+}
+
+
+/* main_slide 영역 */
+.main_slide {
+    width: 100%;
+    height: 480px;
+    clear: both;
+    position: relative;  /* slick-dots positioning */
+}
+
+.move{height: 480px;}
+
+.move .slick-slide{height: 480px;}
+.move .slick-slide a{
+    display: block;
+    height: 480px;
+}
+.move .slick-slide a img{width: 100%}
+
+.move .slick-dots{
+    position: absolute;
+    z-index: 7;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.move .slick-dots li{display: inline-block; margin: 5px; }
+
+.move .slick-dots li button{
+    width: 20px;height: 20px;
+    border: none;
+    border-radius: 10px;
+    text-indent: -9999px;
+    box-shadow: 1px 1px 5px gray, inset 1px 1px #ddd;
+    transition: all 0.3s;
+}
+
+.move .slick-dots li.slick-active button{
+    width: 80px;
+    background-color: #666;
+}
+
+/* 컨텐츠 영역 */
+.main_inner{
+    width: 940px;
+    margin: 50px auto;
+}
+
+.cont01{}
+
+.cont01_list{
+    display: flex;
+    justify-content: space-between;    
+}
+.cont01_list li{}
+.cont01_list li h3{padding-top: 30px; padding-left: 20px;
+}
+.cont01_list li p{}
+
+.franchise{
+    width: 225px;height: 272px;
+    background-color: #faf9f7;
+}
+
+.mall{
+    width: 460px;
+    height: 272px;
+}
+
+.mall > p{
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+.mall_list{display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    text-align: center;
+}
+.mall_list li:nth-child(2){
+    border-left: 1px dotted #ddd;
+    border-right: 1px dotted #ddd;;
+}
+.mall_list li a{}
+.mall_list li a img{width: 80%;}
+.mall_list li a p{
+    font-size: 12px;
+}
+
+
+.store{
+    width: 240px;
+    height: 272px;
+    background-color: #faf9f7;
+}
+
+
+/* cont02 영역 */
+.cont02{
+    height: 152px;
+    margin: 50px 0 30px;
+}
+.cont2_list{
+    display: flex;
+    justify-content: space-between;
+}
+.cont2_list li{}
+
+
+/* cont03 영역 */
+.cont03{}
+
+.cont03_list{display: flex;
+    justify-content: space-between;
+}
+
+.cont03_list > li{
+    width: 24%;
+}
+.cont03_list h3{
+    margin-bottom: 10px;
+}
+
+.event_list{}
+.event_list li{
+    line-height: 1.8;
+}
+.event_list li a{
+    width: 70%;
+    float: left;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+    overflow: hidden;
+}
+.event_list li span{
+    float: right;
+}
+
+.b2b p{
+    line-height: 1.7;
+    text-align: justify;
+    letter-spacing: -0.05em;
+}
+
+.more{
+    margin-top: 5px;
+}
+
+/* 뉴스 영역 */
+
+.table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table td{
+    padding-bottom: 10px;
+}
+
+.col1{
+    width: 75%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /* 표에서는 white-space: nowrap;과 table한테 
+    table-layout: fixed;를 걸어줘야 ...으로 바뀜 */
+    overflow: hidden;
+}
+
+
+.col2{
+    width: 25%;
+    text-align: right;
+}
+
+/* 노티스 영역 */
+
+.notice_list{
+    text-align: right;
+}
+.notice_list li{
+    display: inline-block;
+    text-align: center;
+    padding-top: 30px;
+}
+.notice_list li a{
+    display: block;
+    padding: 0 30px;
+}
+.notice_list li span{
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.notice_list li:nth-child(1) a{
+    border-right: 1px dotted gray;
+}
+
+.cont4{
+    margin: 50px 0;
+    padding: 50px 0 100px 0;
+    border-top: 2px solid darkred;
+}
+
+/* 푸터 영역 */
+
+#footer{
+    background-color: darkred;
+    color: white;
+    padding: 20px 0;
+}
+
+.foot_inner{
+    width: 940px;
+    margin: 0 auto;
+}
+
+.f_menu{}
+.f_menu li{
+    float: left;
+}
+.f_menu li a{
+    display: block;
+    padding: 2px 5px;
+    font-size: 12px;
+    position: relative;
+}
+
+.f_menu li:nth-child(1) a{
+    padding-left: 0 !important;
+}
+
+.f_menu li a::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 1px;
+    height: 12px;
+    background-color: white;
+    right: 0;
+    top: 5px;
+}
+
+.f_menu li:last-child a::after{
+    display: none;
+}
+
+.address{
+    font-style: normal;
+    opacity: 0.6;
+    padding-top: 50px;
+    font-size: 12px;
+}
+
+.fix_menu{}
+.fix_menu a{}
+.fix_menu a img{
+    position: fixed;
+    left: 78%;
+    top: 3%;
+}
+
+.popup{
+    width: 500px;
+    height: 700px;
+    /* border: 10px solid red; */
+    box-sizing: unset;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 30;
+}
+
+.close{
+    width: 492px;
+    height: 50px;
+    cursor: pointer;
+}

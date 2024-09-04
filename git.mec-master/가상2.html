@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .list{
+            text-align: center;
+        }
+        .list li{
+            display: inline-block;
+        }
+        .list li a{
+            display: block;
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .list li a::after{
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 10px;
+            background-color: black;
+            margin-left: 20px;
+        }
+
+        .list li:last-child a::after{
+            display: none;
+        }
+
+        .list li::before{
+            content: "a";
+            color: blue;
+            font-size: 5px;
+        }
+
+        .list{
+            text-align: center;
+            margin: 20px 0;
+        }
+        .list li{
+            display: inline-block;
+            width: 150px;
+        }
+        .list li a{
+            display: block;
+            padding: 10px;
+            position: relative;
+        }
+
+        .list li a::before{
+            content: "|";
+            position: absolute;
+            left: 0;
+        }
+
+        .list li:first-child a::before{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list">
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu5</a></li>
+    </ul>
+
+    <ul class="list">
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu5</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            border: 1px solid red;
+        }
+
+        ul, ol, li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .list1{}
+        .list1 li{
+            float: left;
+        }
+        .list1 li a{
+            display: block;
+            padding: 20px;
+            background-color: aqua;
+        }
+
+        .clear_fix::before, .clear_fix::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .box1{
+            background-color: yellow;
+            width: 300px;
+            float: left;
+        }
+
+        .box2{
+            width: 500px;
+            height: 500px;
+            background-color: orange;
+            float: left;
+        }
+    </style>
+</head>
+<body> 
+    <ul class="list1 clear_fix">
+        <li><a href="#">sadsad</a></li>
+        <li><a href="#">sadsad</a></li>
+        <li><a href="#">sadsad</a></li>
+        <li><a href="#">sadsad</a></li>
+        <li><a href="#">sadsad</a></li>
+        <li><a href="#">sadsad</a></li>
+    </ul>
+    <div class="box1">sdsada dsadas das</div>
+
+    <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur error ducimus reiciendis, alias laboriosam provident praesentium recusandae quo explicabo sit commodi tenetur aspernatur harum perferendis atque autem fuga veniam corrupti?
+    </div>
+
+    <div class="box3 clear_fix">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, vitae! Hic beatae, obcaecati, reiciendis, maiores iure optio labore harum libero nobis excepturi deserunt atque ea in. Minima consequatur ipsa cum.
+    </div>
+</body>
+</html>

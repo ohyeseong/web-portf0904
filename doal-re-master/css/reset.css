@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+/* 웹폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&display=swap');
+
+*{margin: 0;padding: 0; box-sizing: border-box;}
+ul,ol, li{list-style: none;}
+a{text-decoration: none; color: inherit;}
+
+html, body{
+    font-size: 14px;
+    color: #444;
+    font-family: "Acme", sans-serif;
+}
+
+img{vertical-align: baseline;}
+
+table{border-collapse: collapse;}

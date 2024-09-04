@@ -1,0 +1,595 @@
+@charset "utf-8";
+
+body{
+    width: 1920px;
+}
+
+.title{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 50px;
+}
+
+.p_title{
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 해더영역 */
+
+.header{
+    width: 100%;
+    /* background-color: skyblue; */
+    height: 170px;
+    /* background-color: rgb(205, 228, 255); */
+}
+
+.header_inner{
+    width: 1200px;
+    height: 170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{}
+.logo img{}
+
+.main_menu{
+    display: flex;
+    column-gap: 20px;
+}
+.main_menu>li{
+    display: inline-block;
+}
+.main_menu>li>a{
+    padding: 70px 20px;
+    line-height: 170px;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(80, 79, 79);
+}
+
+.main_menu>li:hover>a{
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.main_menu>li:hover .sub{
+    display: block;
+}
+
+.sub{
+    display: none;
+}
+.sub li{}
+.sub li a{
+    display: block;
+    border: 1px solid black;
+    padding: 5px 10px;
+    transition: all 0.3s;
+    background-color: white;
+}
+.sub li a:hover{
+    background-color: rgb(187, 187, 187);
+    color: rgb(255, 255, 255);
+}
+
+/* 슬라이드 이미지 영역 */
+
+.slide_img{
+    width: 1200px;
+    height: 491px;
+    margin: 0 auto;
+    background-image: url(../source/mmain_bg.jpg);
+}
+
+.slide_img_opa{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 100%;
+}
+.slide_img_opa h1{
+    padding: 120px 0 0 100px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 5px 5px 3px rgb(182, 181, 181);
+}
+
+.slide_img_opa h3{
+    padding: 30px 0 0 100px;
+    color: white;
+    font-size: 24px;
+}
+
+.slide_menu{
+    display: flex;
+    justify-content: center;
+    margin-top: 185px;
+}
+.slide_menu li{
+    
+}
+.slide_menu li a{
+    display: block;
+    padding: 20px 80px;
+    border-left: 1px solid white;
+    color: orange;
+    font-weight: bold;
+}
+
+.slide_menu li a.none{
+    border-left: 0;
+}
+
+.slide_menu li a:hover{
+    color: rgb(255, 207, 117);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0));
+}
+
+/* 검색영역 */
+.search{
+    width: 1200px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: rgb(68, 169, 252);
+    text-align: center;
+}
+
+.search span{
+    font-size: 20px;
+    margin-right: 50px;
+    line-height: 149px;
+    font-weight: bold;
+}
+.search_bar{
+    display: inline-block;
+    position: relative;
+}
+
+.search_bar input{
+    display: block;
+    width: 600px;
+    height: 76px;
+    border-radius: 38px;
+    padding-left: 30px;
+    font-size: 20px;
+}
+.search_bar img{
+    width: 41px;
+    height: 40px;
+    position: absolute;
+    top: 18px;
+    left: 530px;
+}
+
+/* 스틱키 */
+.sticky{
+    height: 100px;
+    background-color: rgb(205, 228, 255);
+    border-bottom: 2px solid rgb(117, 117, 117);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.sticky_inner{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.stic_menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.stic_menu>li{
+    padding: 0 30px;
+    border-left: 1px solid black;
+}
+
+.stic_menu>li:first-child{
+    border-left: none;
+}
+.stic_menu li a{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* 인트로 영역 */
+.intro{
+    padding: 150px 0 70px;
+}
+
+.intro h2{}
+.intro>p{
+    margin-bottom: 100px;
+}
+.intro_box{
+    height: 384px;
+}
+
+.intro_mainbox{
+    height: 100%;
+    overflow: hidden;
+}
+.intro_mainbox li{
+    width: 384px;
+    height: 384px;
+    float: left;
+}
+
+.box_opa{
+    transition: all 0.3s;
+    height: 100%;
+    padding: 92px;
+}
+
+.white_box{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.white_box:hover{
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.white_box p{
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: bold;
+    color: rgb(0, 0, 0)
+}
+.white_box>a{}
+.white_box>a>img{
+    width: 50px;
+}
+
+.white_box:hover img{
+    animation: move infinite 0.4s alternate;
+}
+
+@keyframes move{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(30deg);
+    }
+}
+
+.white_box p>a:hover{
+    color: orangered;
+}
+
+.bottom{
+    margin-bottom: 22px;
+}
+
+
+.intro_mainbox li:hover .box_opa{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.box1{
+    background: url(../source/con1.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box2{
+    background: url(../source/con2.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box3{
+    background: url(../source/con3.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box4{
+    background: url(../source/con4.jpg) center center no-repeat;
+    background-size: cover;
+}
+.box5{
+    background: url(../source/con5.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+/* 닥터영역 */
+
+.doctor{
+    padding-top: 150px;
+}
+
+.doctor h2{
+    margin-bottom: 100px;
+}
+
+.doctor_box{
+    height: 411px;
+    background-color: orange;
+    overflow: hidden;
+    background-image: url();
+}
+
+.hs_img{
+    width: 1326px;
+    height: 411px;
+    /* background-color: red; */
+    float: left;
+    background: url(../source/photo_0247.jpg) left center no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.doctor_info{
+    width: 300px;
+    height: 200px;
+    border-radius: 20px 0 0 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 20px;
+}
+.doctor_info p{
+    font-weight: bold;
+}
+
+.doctor_info span{
+    color: red;
+}
+
+.doctor_right{}
+.doctor_right li{
+    width: 198px;
+    height: 411px;
+    float: right;
+}
+.doctor_right>li>div{
+    display: none;
+}
+
+.doctor_right>li:hover>div{
+    display: block;
+}
+
+.right1{
+    background: url(../source/부원장.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.right2{
+    background: url(../source/내과원장.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.right3{
+    background: url(../source/원장.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.dc{
+    width: 198px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.dc_name1{
+    background-color: rgb(255, 224, 167);
+    position: absolute;
+    top: 361px;
+    left: 0;
+
+}
+.dc_name2{
+    background-color: pink;
+    position: absolute;
+    top: 361px;
+    left: 0;
+}
+.dc_name3{
+    background-color: rgb(249, 249, 167);
+    position: absolute;
+    top: 361px;
+    left: 0;
+}
+
+/* QnA 영역 */
+
+.qna{
+    padding: 150px 0 70px;
+}
+
+.qna h2{
+    margin-bottom: 100px;
+}
+
+.qna_box{
+    height: 482px;
+    background: url(../source/snsimg.jpg) center top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.qna_menu_box{
+    height: 482px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    justify-content: center;
+}
+
+.qna_box_opa{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.qna_box_opa li{
+    width: 250px;
+}
+.qna_menu_box li a{
+    display: block;
+    height: 250px;
+    border-radius: 30px;
+    border: 2px solid black;
+    background-color: white;
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    box-shadow: 0 5px 5px rgb(83, 83, 83);
+    text-align: center;
+    line-height: 246px;
+    transition: all 0.3s;
+}
+
+.qna_menu_box li a:hover{
+    background-color: rgb(1, 205, 1);
+    color: white;
+    box-shadow: none;
+}
+
+/* reservation 영역 */
+
+.reserv{
+    padding: 150px 0 70px;
+}
+
+.reserv_menu{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.reserv_menu h2{
+    margin-bottom: 100px;
+}
+
+th{
+    width: 150px;
+    padding: 20px;
+    background-color: skyblue;
+}
+
+td{
+    width: 450px;
+    padding: 10px;
+    background-color: rgb(199, 242, 255);
+}
+
+.pick{
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.date{
+    display: block;
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.time{
+    display: block;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.aniname{
+    display: block;
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+.tel{
+    width: 50px;
+    border-radius: none;
+}
+
+.area{
+    text-align: center;
+}
+
+textarea{
+    padding: 10px;
+}
+
+.check{
+    text-align: right;
+    margin: 20px;
+}
+
+button{
+    display: block;
+    width: 180px;
+    height: 80px;
+    border-radius: 40px;
+    background-color: aqua;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: black;
+    color: white;
+}
+
+/* SNS영역 */
+
+#sns{
+    padding-top: 150px;
+}
+
+#sns h2{
+    margin-bottom: 100px;
+}
+
+.sns_box{
+    height: 150px;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    justify-content: center;
+}
+
+/* 푸터영역 */
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.footer_up{}
+.footer_up img{
+    float: left;
+}
+.footer_up p{
+    float: left;
+    margin-left: 30px;
+    line-height: 2;
+    padding: 25px 0;
+}
+.copy{
+    clear: both;
+    padding: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}

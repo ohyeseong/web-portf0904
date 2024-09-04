@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신한은행</title>
+    <link rel="stylesheet" href="css/total.css">
+    <link rel="shortcut icon" href="img/common_icnNew_loading01.png">
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/slick.js"></script>
+</head>
+<body>
+    <!-- 헤더 영역(모바일) -->
+    <div class="wrap">
+        <header class="header_m">
+            <div class="toggle_btn_m">
+                <a href="#">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </a>
+            </div>
+            <div class="head_logo_m"><a href="#"><img src="img/로고.png" alt="m_logo"></a></div>
+            <div class="search_btn_m"><a href="#"><img src="img/서치버튼.png" alt=""></a></div>
+        </header><!-- header_m -->
+        
+        <!-- 해더영역PC -->
+        <div class="header_pc">
+            <div class="head_inner_pc">
+                <div class="head_top">
+                    <ul class="h_top_menu">
+                        <li><a href="#">금융서비스</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">은행소개</a></li>
+                        <li><a href="#">Tops Clup</a></li>
+                        <li><a href="#">카드</a></li>
+                        <li><a href="#">증권</a></li>
+                        <li><a href="#">신한 맴버스</a></li>
+                        <li><a href="#">신한 맴버스</a></li>
+                        <li>
+                            <a href="#" class="global_pc">
+                                GLOBAL
+                                <span>아래</span>
+                            </a>
+                            <ul class="global_sub_pc">
+                                <li class="lang_pc">
+                                    <div class="korea"><a href="#">Korea</a></div>
+                                    <div class="korea"><a href="#">China</a></div>
+                                    <div class="korea"><a href="#">Japan</a></div>
+                                    <div class="korea"><a href="#">English</a></div>
+                                </li>
+                                <li><hr></li>
+                                <li><a href="#">GLOBAL PORTAL ></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+    
+                    <div class="search_btn_pc">
+                        <a href="#"><img src="img/서치버튼.png" alt=""></a>
+                    </div>
+                
+                </div><!-- head_top -->
+                <div class="head_bottom">
+                    <div class="head_logo_pc"><a href="#">로고</a></div>
+    
+                    <nav class="head_main_menu">
+                        <ul class="main_menu_pc">
+                            <li>
+                                <a href="#">개인</a>
+                                <ul class="sub_pc">
+                                    <li><a href="#">조회</a></li>
+                                    <li><a href="#">이체</a></li>
+                                    <li><a href="#">금융상품</a></li>
+                                    <li><a href="#">공과금/법원</a></li>
+                                    <li><a href="#">뱅킹보안관리</a></li>
+                                    <li><a href="#">기타금융</a></li>
+                                    <li><a href="#">부가서비스</a></li>
+                                    <li><a href="#">사용자관리</a></li>
+                                    <li><a href="#">카드/증권</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">인증센터</a>
+                                <ul class="sub_pc">
+                                    <li><a href="#">신한SIGN(신한인증서)</a></li>
+                                    <li><a href="#">금융인증서</a></li>
+                                    <li><a href="#">공동인증서(구 공인인증서)</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">금융상품</a>
+                                <ul class="sub_pc">
+                                    <li><a href="#">예금신탁</a></li>
+                                    <li><a href="#">ISA</a></li>
+                                    <li><a href="#">대출</a></li>
+                                    <li><a href="#">펀드</a></li>
+                                    <li><a href="#">외한</a></li>
+                                    <li><a href="#">퇴직연금</a></li>
+                                    <li><a href="#">보험/공체</a></li>
+                                    <li><a href="#">골드/실버</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">금융서비스</a>
+                                <ul class="sub_pc">
+                                    <li><a href="#">스마트금융</a></li>
+                                    <li><a href="#">전자금융</a></li>
+                                    <li><a href="#">주택도시기금</a></li>
+                                    <li><a href="#">세무</a></li>
+                                    <li><a href="#">상생금융</a></li>
+                                    <li><a href="#">기타금융</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">고객센터</a>
+                                <ul class="sub_pc">
+                                    <li><a href="#">고객상담</a></li>
+                                    <li><a href="#">금융소비자보호</a></li>
+                                    <li><a href="#">보안서비스</a></li>
+                                    <li><a href="#">자료실</a></li>
+                                    <li><a href="#">회원서비스</a></li>
+                                    <li><a href="#">상품 간편검색</a></li>
+                                    <li><a href="#">사고신고</a></li>
+                                    <li><a href="#">정보광장</a></li>
+                                    <li><a href="#">통합검색</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+    
+                    <a href="#" class="head_log_btn">로그인</a>
+                </div><!-- head_bottom -->
+            </div>
+    
+            <div class="sub_bg_pc"></div>
+        </div><!-- header_pc -->
+    
+        <!-- 슬라이드 이미지 영역 모바일 -->
+        <header class="slide_m">
+            <nav class="slide_area_m">
+                <ul class="slide_img_m">
+                    <li><a href="#"><img src="img/모바일슬라이드1.png" alt="sl1"></a></li>
+                    <li><a href="#"><img src="img/모바일슬라이드2.png" alt="sl2"></a></li>
+                    <li><a href="#"><img src="img/모바일슬라이드3.png" alt="sl3"></a></li>
+                    <li><a href="#"><img src="img/모바일슬라이드4.png" alt="sl4"></a></li>
+                    <li><a href="#"><img src="img/모바일슬라이드5.png" alt="sl5"></a></li>
+                </ul>
+            </nav>
+        </header><!-- slide_m -->
+    
+        <header class="slide_pc">
+            <nav class="slide_area_pc">
+                <ul class="slide_img_pc">
+                    <li><a href="#"><img src="img/슬라이드1.png" alt="sl1"></a></li>
+                    <li><a href="#"><img src="img/슬라이드2.png" alt="sl2"></a></li>
+                    <li><a href="#"><img src="img/슬라이드3.png" alt="sl3"></a></li>
+                    <li><a href="#"><img src="img/슬라이드4.png" alt="sl4"></a></li>
+                    <li><a href="#"><img src="img/슬라이드5.png" alt="sl5"></a></li>
+                </ul>
+            </nav>
+        </header><!-- slide_m -->
+    
+        <!-- 검색기능 -->
+        <div class="search_area_m">
+            <p class="keyword_m">
+                키워드 검색 | 금융상품 간편검색
+            </p>
+            <div class="tipe_area_m">
+                <input type="text" placeholder="검색어를 입력하세요.">
+                <a href="#" class="keysearch_btn_m">
+                    <img src="img/서치버튼_하양.png" alt="">
+                </a>
+            </div>
+            <ul class="keyword_more_m">
+                <li><a href="#">추천검색어</a></li>
+                <li><a href="#">주거래</a></li>
+                <li><a href="#">스마트적금</a></li>
+                <li><a href="#">자동차대출</a></li>
+                <li><a href="#">공인인증서</a></li>
+            </ul>
+        </div><!-- search_area_m -->
+    
+        <div class="search_area_modal_m"></div>
+    
+        <!-- 메인메뉴 기능 모바일 -->
+        <div class="main_menu_m">
+            <p>신한 모바일 홈페이지 방문을 환영합니다</p>
+    
+            <nav class="menu_list_m">
+                <ul class="menu_list_body_m">
+                    <li>
+                        <a href="#">개인</a>
+                        <ul class="sub_m">
+                            <li><a href="#">조회</a></li>
+                            <li><a href="#">이체</a></li>
+                            <li><a href="#">금융상품</a></li>
+                            <li><a href="#">공과금/법원</a></li>
+                            <li><a href="#">뱅킹보안관리</a></li>
+                            <li><a href="#">기타금융</a></li>
+                            <li><a href="#">부가서비스</a></li>
+                            <li><a href="#">사용자관리</a></li>
+                            <li><a href="#">카드/증권</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">인증센터</a>
+                        <ul class="sub_m">
+                            <li><a href="#">신한SIGN(신한인증서)</a></li>
+                            <li><a href="#">금융인증서</a></li>
+                            <li><a href="#">공동인증서(구 공인인증서)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">금융상품</a>
+                        <ul class="sub_m">
+                            <li><a href="#">예금신탁</a></li>
+                            <li><a href="#">ISA</a></li>
+                            <li><a href="#">대출</a></li>
+                            <li><a href="#">펀드</a></li>
+                            <li><a href="#">외한</a></li>
+                            <li><a href="#">퇴직연금</a></li>
+                            <li><a href="#">보험/공체</a></li>
+                            <li><a href="#">골드/실버</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">금융서비스</a>
+                        <ul class="sub_m">
+                            <li><a href="#">스마트금융</a></li>
+                            <li><a href="#">전자금융</a></li>
+                            <li><a href="#">주택도시기금</a></li>
+                            <li><a href="#">세무</a></li>
+                            <li><a href="#">상생금융</a></li>
+                            <li><a href="#">기타금융</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">고객센터</a>
+                        <ul class="sub_m">
+                            <li><a href="#">고객상담</a></li>
+                            <li><a href="#">금융소비자보호</a></li>
+                            <li><a href="#">보안서비스</a></li>
+                            <li><a href="#">자료실</a></li>
+                            <li><a href="#">회원서비스</a></li>
+                            <li><a href="#">상품 간편검색</a></li>
+                            <li><a href="#">사고신고</a></li>
+                            <li><a href="#">정보광장</a></li>
+                            <li><a href="#">통합검색</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    
+            <div class="main_menu_more_m">
+                <a href="#">로그인</a>
+                <a href="#">영업점안내</a>
+                <a href="#">신한 SOL뱅크</a>
+                <a href="#">쳇봇 상담</a>
+            </div>
+    
+            <div class="global_btn_m">
+                <a href="#">GLOBAL+</a>
+            </div>
+        </div><!-- menu_list_m -->
+    
+        <div class="menu_list_modal_m"></div>
+    
+        <!-- 메인 영역 -->
+        <div class="main">
+            <!-- 메인콘텐츠 구간 -->
+            <div class="main_contents">
+                <div class="left_cont">
+                    <div class="main_cont1">
+                        <h3>금융상품</h3>
+                        <ul>
+                            <li>
+                                <a href="#" class="cont1_img1">예금</a>
+                                <div>예금</div>
+                            </li>
+                            <li>
+                                <a href="#" class="cont1_img2">펀드</a>
+                                <div>펀드</div>
+                            </li>
+                            <li>
+                                <a href="#" class="cont1_img3">대출</a>
+                                <div>대출</div>
+                            </li>
+                            <li>
+                                <a href="#" class="cont1_img4">외한</a>
+                                <div>외한</div>
+                            </li>
+                            <li>
+                                <a href="#" class="cont1_img5">퇴직연금</a>
+                                <div>퇴직연금</div>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="main_cont2">
+                        <ul class="cont2">
+                            <li>
+                                <a href="#">
+                                    <p>조회</p>
+                                    <div class="cont2_img1">조회</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>이체</p>
+                                    <div class="cont2_img2">이체</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <p>인증센터</p>
+                                    <div class="cont2_img3">인증센터</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right_cont">
+                    <img src="img/intro_event_def.png" alt="">
+                </div>
+            </div>
+            
+            <!-- 서비스콘텐츠 구간 -->
+            <div class="service_contents">
+                <div class="main_service">
+                    <h3>주요서비스</h3>
+                    <a href="" class="main_service_more_btn">더보기+</a>
+                    <ul class="main_service_list">
+                        <li>
+                            <a href="#">
+                                예/적금신규
+                                <div class="check"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                자동이체
+                                <div class="check"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                공과금납부
+                                <div class="check"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                인터넷환전
+                                <div class="check"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                환율조회
+                                <div class="check"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                펀드신규
+                                <div class="check"></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                영업점안내
+                                <div class="check"></div>
+                            </a>
+                        </li>
+    
+                        <div class="blue_box1"></div>
+                        <div class="blue_box2"></div>
+                    </ul>
+    
+                </div><!-- main_service -->
+    
+                <div class="service_more">
+                    <div class="service_more1">
+                        <h3>간편조회 서비스</h3>
+                        <a href="" class="service_more1_btn">더보기+</a>
+                        <ul class="service_more1_list">
+                            <li>
+                                <a href="#">
+                                    계좌조회
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    환율조회
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    법원업무
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    관리소 재증명
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="service_more2">
+                        <h3>증명서</h3>
+                        <a href="" class="service_more2_btn">더보기+</a>
+                        <ul class="service_more2_list">
+                            <li>
+                                <a href="#">
+                                    대학등록금
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    지급보증서
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    예금잔액증명서
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="service_more3">
+                        <h3>진위확인 서비스</h3>
+                        <a href="" class="service_more2_btn">더보기+</a>
+                        <ul class="service_more2_list">
+                            <li>
+                                <a href="#">
+                                    여신증명서조회
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    자기앞수표조회
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    전자상환위임장조회
+                                    <div class="check"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div><!-- service_more -->
+    
+                <div class="service_img_pc">
+                    <img src="img/신한은행_이미지.png" alt="">
+                </div><!-- service_img_pc -->
+    
+                <div class="notice">
+                    
+                    <div class="notice_left">
+                        <h5><a href="#" class="on">새소식</a></h5>
+                        <ul class="noti_left">
+                            <li>
+                                <a href="#">종합통장대출(유동성한도대출)등 기준금리의 변동주기 변경 적용 안내</a>
+                                <span>2024.06.25</span>
+                            </li>
+                            <li>
+                                <a href="#">비대면 금융사고 책임분담 안내</a>
+                                <span>2024.07.02</span>
+                            </li>
+                            <li>
+                                <a href="#">비대면 환전 신청 한도 변경 안내</a>
+                                <span>2024.07.05</span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="notice_right">
+                        <h5><a href="#">보안뉴스</a></h5>
+                        <ul class="noti_right">
+                            <li>
+                                <a href="#">검찰사칭 보이스 피싱 주의 소비자경보</a>
+                                <span>2024.07.24</span>
+                            </li>
+                            <li>
+                                <a href="#">개인정보 노출사실 전파 업무 개정 공지</a>
+                                <span>2024.07.26</span>
+                            </li>
+                            <li>
+                                <a href="#">추석 명절, 선물 배송 등을 사칭한 스미싱 주의! 출처가 불분명한 문자 주의</a>
+                                <span>2024.08.13</span>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="notice_more_btn">
+                        <a href="#">+</a>
+                    </div>
+                    
+                </div><!-- notice -->
+    
+                <div class="service_tel">
+                    <img src="img/고객센터.JPG" alt="">
+                </div><!-- service_tel -->
+            </div><!-- service_contents -->
+    
+            <!-- 상품소개 구간 -->
+            <div class="present">
+                <div class="present_inner">
+                    <h3>신한은행의 <span class="orange">추천상품</span>을 확인해보세요</h3>
+                    <ul class="present_list">
+                        <li>
+                            <a href="#">
+                                <p class="present_txt">예금</p>
+                                <img src="img/상품그림1.png" alt="pr1">
+                                <h4>신한 안녕, 반가워 적금</h4>
+                                <p class="present_txt2">새롭게 금융거래를 시작하는 <br> 고객님을 응원하는 적금</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="present_txt">예금</p>
+                                <img src="img/상품그림2.png" alt="pr2">
+                                <h4>주택청약 종합저축</h4>
+                                <p class="present_txt2">내집마련과 목돈마련 준비 <br> 주택청약 종합저축으로 한번에!</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="present_txt">골드/실버</p>
+                                <img src="img/상품그림3.png" alt="pr3">
+                                <h4>신한골드리슈골드테크</h4>
+                                <p class="present_txt2">금의 입출금 거래가 <br> 자유로운 골드 대표상품</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <p class="present_txt">대출</p>
+                                <img src="img/상품그림4.png" alt="pr4">
+                                <h4>신한 MY CAR 대출</h4>
+                                <p class="present_txt2">자동차 구입시 은행 방문없이 <br> 대출 실행까지 되는 자동차대출</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div><!-- present -->
+        </div>
+    
+        <!-- 상품 팝업 -->
+    
+        <!-- 푸터 영역 -->
+        <footer class="footer">
+            <div class="foot_inner">
+                <ul class="foot_menu_list">
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">신용정보활용체제</a></li>
+                    <li><a href="#">전자민원</a></li>
+                    <li><a href="#">상품공시실</a></li>
+                    <li><a href="#">상담신청</a></li>
+                </ul>
+    
+                <p class="foot_tel">고객센터 1599-8000 <span>평일 09:00 ~ 18:00(은행휴뮤일 제외)</span></p>
+                <p class="copyright">SHINHAN.BANK.All rights reserved.</p>
+    
+                <ul class="foot_img">
+                    <li><a href="#" class="f_img1">공유1</a></li>
+                    <li><a href="#" class="f_img2">공유2</a></li>
+                    <li><a href="#" class="f_img3">공유3</a></li>
+                    <li><a href="#" class="f_img4">공유4</a></li>
+                </ul>
+    
+                <div class="foot_global_btn">
+                    <a href="#">
+                        글로벌 &nbsp;&nbsp;|
+                        <div class="f_global_more_btn"></div>
+                    </a>
+                </div>
+    
+                <div class="foot_family_btn">
+                    <a href="#">
+                        패밀리 &nbsp;&nbsp;|
+                        <div class="f_family_more_btn"></div>
+                    </a>
+                </div>
+    
+                <a href="#" class="foot_up_btn">업버튼</a>
+            </div>
+        </footer><!-- footer -->
+    </div>
+</body>
+</html>

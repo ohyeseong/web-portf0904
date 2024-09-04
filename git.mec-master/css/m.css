@@ -1,0 +1,309 @@
+@charset "utf-8";
+
+html, body{
+    height: 100%;
+}
+
+#wrap{}
+
+#header{
+    width: 100%;
+    height: 140px;
+    background-color: white;
+    position: fixed;
+    border-bottom: 2px solid rgb(255, 204, 0);
+}
+
+.header_inner{
+    width: 1168px;
+    margin: 0 auto;
+    height: 100%;
+    /* background-color: rgb(77, 237, 240); */
+}
+
+/* 로고구역 */
+
+.logo{
+    float: left;
+    width: 106px;
+    height: 93px;
+    margin-top: 24px;
+}
+
+/* 메뉴구역 */
+
+.nav{
+    float: left;
+}
+
+.main{
+    margin-left: 50px;
+}
+.main>li{
+    display: inline-block;
+    position: relative;
+}
+/* 앞으로 li가 더 나올게 아니라면 >가 없어도 괜찮지만 
+sub로 li가 더 있기에 >를 넣어서 구분해줘야 한다 */
+.main>li>a{
+    display: block;
+    height: 140px;
+    line-height: 140px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 80px 0 0;
+}
+
+.main>li:hover>a{
+    border-bottom: 3px solid black;
+}
+
+.nav:hover .sub{
+    display: block;
+}
+
+#header:hover .sub{display: block;}
+#header:hover .sub_bg{
+    display: block;
+}
+
+.sub_bg{
+    width: 100%;
+    height: 370px;
+    background-color: white;
+    position: absolute;
+    top: 140px;
+    left: 0;
+    z-index: 4;
+    display: none;
+}
+
+.sub{
+    position: absolute;
+    left: 0;
+    top: 140px;
+    width: 140%;
+    display: none;
+    z-index: 5;
+}
+
+.sub li{
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.sub li:hover{
+    text-decoration-line: underline;
+}
+
+.sub li a{
+    height: 50px;
+    line-height: 50px;
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+
+.sub li a:hover{
+    border-bottom: #555;
+}
+
+/* 메뉴구역2 */
+
+.util{
+    float: right;
+    margin: 52px 0;
+    /* border: 1px sienna solid; */
+}
+
+.util li{
+    display: inline-block;
+    /* border: 1px solid black; */
+    margin-left: 10px;
+
+}
+.util li a{
+    display: block;
+    width: 80px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 18px;
+    color: white;
+}
+
+.util1 a{  
+    background-color: #df040c;
+}
+.util2 a{
+    background-color: #dc8001;
+}
+.util3 a{
+    background-color: #274a36;
+}
+
+.util4 a{
+    width: 36px;
+    height: 36px;
+    background: url(../source/ico_search.png) no-repeat center center;
+    background-size: 34px;
+    text-indent: -4000px;
+}
+
+/* 이미지 슬라이드 영역 */
+#section{
+    padding-top: 140px;
+    width: 1920px;
+    margin: 0 auto;
+}
+
+.slide_img{
+    height: 540px;
+}
+
+/* 라이브 영역 */
+.live{
+    width: 1168px;
+    margin: 30px auto;
+}
+
+.title{
+    font-size: 36px;
+    margin: 50px 0 70px;
+}
+.live_list{
+    margin-top: 30px;
+}
+
+.live_list li{
+    width: 366px;
+    height: 438px;
+    float: left;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.6);
+    margin-bottom: 35px;
+}
+
+.live_list li:hover{
+    background-image: linear-gradient(orange 5%, white 100%);
+}
+
+.mid{
+    margin: 0 35px;
+}
+
+.live_list li a{}
+
+.live_list li a .list_img{
+    margin-bottom: 40px;
+}
+
+.live_list li a .list_img img{
+    width: 100%;
+}
+
+.live_list li a h4{
+    font-size: 15px;
+    padding: 0 30px;
+    line-height: 2;
+}
+
+/* 노랑버튼 */
+
+.dot{
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* 스틱키 메뉴 */
+
+.sticky{
+    width: 120px;
+    position: fixed;
+    left: calc(50% + (1168px / 2) + 20px);
+    bottom: 350px;
+}
+
+.sticky a{
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sticky a img{}
+
+/* 푸터 영역 */
+
+#footer{
+    background-color: #292929;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.footer_inner{
+    width: 1168px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.f_menu{
+    float: left;
+}
+.f_menu li{}
+.f_menu li a{
+    font-weight: bold;
+    color: white;
+    display: block;
+    padding: 10px 0;
+}
+.f_menu li a.yellow{
+    color: yellow !important;
+}
+
+.info{
+    float: left;
+    margin-left: 20px;
+}
+.info li{
+    padding: 10px 0;
+    color: #787878;
+}
+
+.sns{
+    float: right;
+}
+.sns li{
+    display: inline-block;
+    margin-left: 15px;
+}
+.sns li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../source/ico_sns.png);
+    background-repeat: no-repeat;
+    text-indent: -4000px;
+}
+
+.sns1{
+    background-position: 0 0;
+}
+.sns2{
+    background-position: 0 -40px;
+}
+.sns3{
+    background-position: 0 -80px;
+}
+.sns4{
+    background-position: 0 -120px;
+}
+.sns5{
+    width: 100px !important;
+    height: 72px !important;
+    background-image: url(../source/web_accessibility.png) !important;
+    background-position: center center;
+    background-size: 100%;
+}

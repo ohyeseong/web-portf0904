@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul, ol, li{
+            list-style: none;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        ul{}
+        ul li{
+            float: left;
+        }
+
+        ul li a{
+            display: block;
+            padding: 10px;
+        }
+
+        .clear::before, .clear::after{
+            content: "";
+            display: block;
+            clear: both;
+            border-top: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <ul class="list1 clear">
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu1</a></li>
+    </ul>
+
+    <ul class="list2 clear">
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu2</a></li>
+    </ul>
+
+    <ul class="list3 clear">
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu3</a></li>
+    </ul>
+</body>
+</html>
